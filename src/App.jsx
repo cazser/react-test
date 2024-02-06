@@ -11,7 +11,12 @@ import { TopBottomAlignContainer } from './components/TopBottomAlignContainer'
 import { Font12px } from './components/Font12px'
 import { MarginTopBottom4px } from './components/MarginTopBottom4px'
 import { TextAlignCenter } from './components/TextAlignCenter'
-
+import { RightAlignContainer } from './components/RightAlignContainer'
+import { Font8px } from './components/Font8px'
+import { Padding8 } from './components/Padding8'
+import { Padding4 } from './components/Padding4'
+import { LineButton } from './components/LineButton'
+import { MarginTopBottom10px } from './components/MarginTopBotton10px'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -44,21 +49,34 @@ function App() {
         </TopBottomAlignContainer>
      </LeftRightAlignContainer>
     </Padding10>
-
-     <div>
+      <Padding10>
+     <LeftRightAlignContainer>
      <span>Select Amount</span>
      <span>Available 2 ATOM</span>
-     </div>
-     <input></input>
-     <div>
-      <span>Max</span>
-      <span>1/2</span>
-      <span>1/3</span>
-     </div>
-     <div>Estimated time: 20 seconds</div>
-     <button>Transfer</button>
-     <button>Cancel</button>
-     
+     </LeftRightAlignContainer>
+     </Padding10>
+     <Padding10>
+     <input placeholder='1111'></input>
+    </Padding10>
+    <Padding4>
+     <RightAlignContainer>
+      <Font8px>Max</Font8px>
+      <Font8px>1/2</Font8px>
+      <Font8px>1/3</Font8px>
+     </RightAlignContainer>
+     </Padding4>
+     <Padding4>
+      <Font12px>
+     <span>Estimated time: 20 seconds</span>
+     </Font12px>
+     </Padding4>
+     <Padding10>
+      
+     <LineButton>Transfer</LineButton>
+     <MarginTopBottom10px>
+     <LineButton>Cancel</LineButton>
+     </MarginTopBottom10px>
+     </Padding10>
      </DarkBackground>
      </Wrapper>
     </>
