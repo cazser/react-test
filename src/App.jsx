@@ -17,6 +17,10 @@ import { Padding8 } from './components/Padding8'
 import { Padding4 } from './components/Padding4'
 import { LineButton } from './components/LineButton'
 import { MarginTopBottom10px } from './components/MarginTopBotton10px'
+import { ColorGrey } from './components/ColorGrey'
+import { Margin2px } from './components/Margin2px'
+import { Background222428 } from './components/Background222428'
+import { Background141417 } from './components/Background141417'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -36,23 +40,46 @@ function App() {
       <LeftRightAlignContainer>
         <TopBottomAlignContainer>
           <MarginTopBottom4px>
-          <Font12px>From Cosmos Hub</Font12px>
+            <ColorGrey>
+              <Font12px>From Cosmos Hub</Font12px>
+            </ColorGrey>
           </MarginTopBottom4px>
-          <input></input>
+          <Background141417>
+            <ColorGrey>
+            <img src="./assets/react.svg"/>
+            <Font12px>
+            atom1xy5y...m6wwz9a
+            </Font12px>
+            </ColorGrey>
+          </Background141417>
         </TopBottomAlignContainer>
-           <TextAlignCenter>-></TextAlignCenter>
+          <ColorGrey>
+            <TextAlignCenter>-></TextAlignCenter>
+          </ColorGrey>
       <TopBottomAlignContainer>
           <MarginTopBottom4px>
-          <Font12px>To Osmosis</Font12px>
+            <ColorGrey>
+            <Font12px>To Osmosis</Font12px>
+            </ColorGrey>
           </MarginTopBottom4px>
-          <input></input>
+         <Background141417>
+            <ColorGrey>
+            <Font12px>
+            osmo1xy5y...w9a
+            </Font12px>
+            </ColorGrey>
+          </Background141417> 
         </TopBottomAlignContainer>
      </LeftRightAlignContainer>
     </Padding10>
       <Padding10>
      <LeftRightAlignContainer>
-     <span>Select Amount</span>
+      <ColorGrey>
+        <span>Select Amount</span>
+     </ColorGrey>
+     <ColorGrey>
      <span>Available 2 ATOM</span>
+     </ColorGrey>
      </LeftRightAlignContainer>
      </Padding10>
      <Padding10>
@@ -60,9 +87,23 @@ function App() {
     </Padding10>
     <Padding4>
      <RightAlignContainer>
-      <Font8px>Max</Font8px>
-      <Font8px>1/2</Font8px>
-      <Font8px>1/3</Font8px>
+      <ColorGrey>
+      <Margin2px>
+        <Background222428>
+        <Font8px>Max</Font8px>
+        </Background222428>
+      </Margin2px>
+      <Margin2px>
+        <Background222428>
+        <Font8px>1/2</Font8px>
+        </Background222428>
+      </Margin2px>
+      <Margin2px>
+        <Background222428>
+        <Font8px>1/3</Font8px>
+        </Background222428>
+      </Margin2px>
+      </ColorGrey>
      </RightAlignContainer>
      </Padding4>
      <Padding4>
